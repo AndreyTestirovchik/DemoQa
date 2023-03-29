@@ -11,4 +11,4 @@ class ModalDialogs(BasePage):
             'title': 'DEMOQA'
         }
         self.icon = WebElement(driver, locator='#app > header > a')
-        self.btns_menu_list = WebElement(driver, locator='div:nth-child(3) > div > ul > li')
+        self.btns_menu_list = WebElement(driver, locator=':nth-child(3) > div > ul > li')

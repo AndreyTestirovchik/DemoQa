@@ -9,6 +9,7 @@ class FormsPage(BasePage):
         self.pageData = {
             'title': 'DEMOQA'
         }
+        self.user_form = WebElement(driver, locator='#userForm')
         self.first_name = WebElement(driver, locator='#firstName')
         self.last_name = WebElement(driver, locator='#lastName')
         self.user_email = WebElement(driver, locator='#userEmail')
@@ -16,6 +17,8 @@ class FormsPage(BasePage):
         self.gender_radio_2 = WebElement(driver, locator='#gender-radio-2')
         self.gender_radio_3 = WebElement(driver, locator='#gender-radio-3')
         self.user_number = WebElement(driver, locator='#userNumber')
+        self.state = WebElement(driver, locator='#state')
+        self.state_menu = WebElement(driver, locator='#state > div.css-26l3qy-menu')
         self.btn_submit = WebElement(driver, locator='#submit')
         self.modal_dialog = WebElement(driver, locator='body > div.fade.modal.show > div')
         self.btn_close_modal = WebElement(driver, locator='#closeLargeModal')

@@ -13,5 +13,4 @@ class TextBoxPage(BasePage):
         self.current_address = WebElement(driver, locator='#currentAddress')
         self.btn_submit = WebElement(driver, locator='#submit')
         self.output = WebElement(driver, locator='#output')
-        # self.output_name = WebElement(driver, locator='#name')
-        # self.output_current_address = WebElement(driver, locator='#currentAddress')
+

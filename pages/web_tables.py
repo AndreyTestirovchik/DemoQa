@@ -22,6 +22,9 @@ class WebTables(BasePage):
         self.table_body = WebElement(driver, locator='.rt-tbody')
         self.btn_edit_new = WebElement(driver, locator='#edit-record-4')
         self.btn_delete_new = WebElement(driver, locator='#delete-record-4')
+
+        self.btn_delete_row = WebElement(driver, locator='[title="Delete"]')
+
         self.btn_select_rows = WebElement(driver, locator='.-pageSizeOptions > select')
         self.size_option_table = WebElement(driver, locator='.-pageSizeOptions')
         self.select_5_rows = WebElement(driver, locator='select > option:nth-child(1)')
@@ -30,5 +33,5 @@ class WebTables(BasePage):
         self.btn_previous = WebElement(driver, locator='.-previous > button')
         self.btn_next = WebElement(driver, locator='.-next > button')
         self.all_page_in_table = WebElement(driver, locator='.-pageInfo > span')
-        self.visible_page_in_table = WebElement(driver, locator=' input[type=number]')
-
+        self.visible_page_in_table = WebElement(driver, locator='input[type=number]')
+        self.no_rows_found = WebElement(driver, locator='div.rt-noData')

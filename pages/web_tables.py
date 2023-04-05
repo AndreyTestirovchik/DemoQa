@@ -35,3 +35,13 @@ class WebTables(BasePage):
         self.all_page_in_table = WebElement(driver, locator='.-pageInfo > span')
         self.visible_page_in_table = WebElement(driver, locator='input[type=number]')
         self.no_rows_found = WebElement(driver, locator='div.rt-noData')
+
+        self.column = WebElement(driver, locator='[role="columnheader"]')
+
+        self.column_first_name = WebElement(driver, locator='.rt-thead.-header > div > div:nth-child(1)')
+        self.column_last_name = WebElement(driver, locator='.rt-thead.-header > div > div:nth-child(2)')
+        self.column_age = WebElement(driver, locator='.rt-thead.-header > div > div:nth-child(3)')
+        self.column_email = WebElement(driver, locator='.rt-thead.-header > div > div:nth-child(4)')
+        self.column_salary = WebElement(driver, locator='.rt-thead.-header > div > div:nth-child(5)')
+        self.column_department = WebElement(driver, locator='.rt-thead.-header > div > div:nth-child(6)')
+        self.column_action = WebElement(driver, locator='.rt-thead.-header > div > div:nth-child(7)')

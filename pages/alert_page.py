@@ -12,6 +12,7 @@ class AlertPage(BasePage):
         self.icon = WebElement(driver, locator='#app > header > a')
         self.btn_alert = WebElement(driver, locator='#alertButton')
         self.btn_confirm = WebElement(driver, locator='#confirmButton')
+        self.btn_time_alert = WebElement(driver, locator='#timerAlertButton')
         self.confirm_result = WebElement(driver, locator='#confirmResult')
         self.btn_promt = WebElement(driver, locator='#promtButton')
         self.promt_result = WebElement(driver, locator='#promptResult')

@@ -1,3 +1,4 @@
+import logging
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
@@ -80,4 +81,11 @@ class WebElement:
             self.find_element()
         )
 
+    def check_css(self, style, value=''):
+        try:
+            self.driver.execute_script(f"arguments[0].style.{style} = '{value}';", self.find_element())
+        except Exception as ex:
+            logging.log(1, ex)
+            return False
+        return True
 

@@ -13,4 +13,5 @@ def test_progress_bar_page(browser):
     while progress_bar_page.progress_bar.get_text() < '51%':
         time.sleep(1)
     progress_bar_page.btn_start.click()
+    time.sleep(2)
 
